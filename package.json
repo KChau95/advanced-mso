@@ -9,7 +9,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.12"
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss-animated": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
