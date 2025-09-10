@@ -1,19 +1,44 @@
-<section class="mx-auto max-w-6xl px-6 py-12">
-  <h2 class="mb-8 text-center text-3xl font-bold">Our Clients</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Carousel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" src="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-    <!-- Card -->
-    <div class="flex items-center justify-center rounded-lg border bg-white p-6 shadow hover:shadow-lg transition">
-      <img src="../pictures/medical-logo.png" alt="Client 1 Logo" class="max-h-12 object-contain h-10 w-20 ">
+  <!-- Carousel Container -->
+  <section id="introduction" class="">
+  <div class="h-auto relative">
+    <img src="../pictures/introduction-2.png" alt="tech" class="h-[600px] rounded-r-lg w-screen">
+
+    <!-- CEO Portrait -->
+    <div class="absolute top-[400px] left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div class="animate-fade-up animate-once animate-duration-1000 animate-ease-in">
+        <img src="../pictures/ceo-portrait-removebg.png" alt="CEO" class="rounded-full">
+        <div class="absolute top-1/2 left-[90px] translate-x-2/3 -translate-y-2/3">
+          <span class="text-white fade-in-delay">Lili Maneerod</span><br>
+          <span class="font-bold">PRESIDENT / CEO</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Repeat -->
-    <div class="flex items-center justify-center rounded-lg border bg-white p-6 shadow hover:shadow-lg transition h-10 w-20">
-      <img src="../pictures/Medicare-Logo.png" alt="Client 2 Logo" class="max-h-12 object-contain ">
+    <!-- CEO Quote -->
+    <div class="absolute top-72 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] text-white font-bold animate-fade-up animate-once animate-duration-1000 animate-delay-500">
+      "We are a gateway to helping clients apply a population health lens to their practice with a focus on quality and outcomes."
     </div>
 
-    <div class="flex items-center justify-center rounded-lg border bg-white p-6 shadow hover:shadow-lg transition">
-      <img src="../pictures/" alt="Client 3 Logo" class="max-h-12 object-contain h-10 w-20">
+    <!-- Title -->
+    <div class="absolute top-24 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl font-bold text-center text-white uppercase animate-fade-down animate-once animate-duration-1000">
+      Advancing the Delivery of <span class="text-orange-500">Healthcare</span>
     </div>
   </div>
 </section>
+
+
+  <script src="carousel.js"></script>
+
+</body>
+</html>
